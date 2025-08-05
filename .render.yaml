@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: zsvu-api
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars: []
+    autoDeploy: true
+    startCommand: php -S 0.0.0.0:10000 index.php
